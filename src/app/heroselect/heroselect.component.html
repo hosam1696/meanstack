@@ -1,0 +1,8 @@
+<h2>{{name}}</h2>
+<ul>
+  New Items
+  <li *ngFor="let item of itemsGroup">{{item}}</li>
+</ul>
+<input type="text" (focus)="changeVisibility()" placeholder="item groups">
+
+<custom-select [hidden]="hideSelectors" (onItemAdded)="addNewItem($event)"></custom-select>

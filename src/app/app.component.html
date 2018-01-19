@@ -1,0 +1,21 @@
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav #sidenav mode="side" opened="true">
+    <h2>welcome</h2>
+    <mat-list role="list">
+        <a mat-list-item routerLink="/custom-select" routerLinkActive="active">custom-select</a>
+    </mat-list>
+  <!--
+    <mat-radio-group>
+      <mat-radio-button value="1">Angular</mat-radio-button><br><br>
+      <mat-radio-button value="2">Material Design</mat-radio-button>
+    </mat-radio-group>-->
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<button mat-raised-button color="primary" (click)="toggleSidebar()" class="fl-btn">=</button>
+
+
