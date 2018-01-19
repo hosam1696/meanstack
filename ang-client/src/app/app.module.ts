@@ -12,18 +12,25 @@ import { MatListModule } from '@angular/material/list';
 
 // App Component
 import { AppComponent } from './app.component';
-import { CustomselectComponent } from './customselect/customselect.component';
+import { CustomselectComponent } from './heroselect/customselect/customselect.component';
+import { HeroselectComponent } from './heroselect/heroselect.component';
+import { BlockComponent } from './block/block.component';
+import { HomeComponent } from './home/home.component';
 
 // routes config
 const APPROUTES: Routes = [
-  { path: 'custom-select', component: CustomselectComponent },
+  { path: 'custom-select', component: HeroselectComponent },
+  {path:'', component: HomeComponent}
   
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomselectComponent
+    CustomselectComponent,
+    HeroselectComponent,
+    BlockComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

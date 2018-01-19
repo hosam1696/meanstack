@@ -1,0 +1,7 @@
+<section class="hsa-block">
+    <h3 select=".title-bl">{{title}}</h3>
+  <div class="content-bl">
+     <p [hidden]="!content">{{content}}</p>
+    <ng-content select=".content-bl"></ng-content>
+  </div>
+</section>
