@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of items" (click)="selectItem(item)">{{item}}</li>
+  <li (click)="addItemGroup()">+ add item group</li>
+  <li (click)="search()"> - advanced search</li>
+</ul>
